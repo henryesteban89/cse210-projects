@@ -18,7 +18,8 @@ class Program
         while (choice != 5)
         {
             Console.WriteLine();
-            Console.WriteLine("Journal Menu");
+            Console.WriteLine("Welcome to the Journal program!");
+            Console.WriteLine("Please select one of the following choices:");
             Console.WriteLine("1. Write");
             Console.WriteLine("2. Display");
             Console.WriteLine("3. Load");
@@ -52,10 +53,13 @@ class Program
             }
             else if (choice == 3)
             {
-                Console.Write("Enter filename: ");
+                Console.Write("What is the filename? ");
                 string fileName = Console.ReadLine();
 
                 journal.LoadFromFile(fileName);
+
+                Console.WriteLine("\nJournal Entries:");
+                journal.DisplayAll();
             }
             else if (choice == 4)
             {

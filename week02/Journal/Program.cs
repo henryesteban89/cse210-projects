@@ -2,8 +2,8 @@ using System;
 
 /*
 Exceeding Requirements:
-- Added two extra journal prompts.
-- Displays a confirmation message after saving and loading files.
+- I Added two extra journal prompts in the list.
+- Displays a confirmation prompt after saving and loading files.
 */
 
 class Program
